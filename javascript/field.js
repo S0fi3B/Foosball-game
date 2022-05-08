@@ -1,0 +1,16 @@
+const table = PIXI.Sprite.from("images/table-border.png");
+const field = PIXI.Sprite.from("images/field.png");
+setPixiLocation(table);
+setPixiLocation(field);
+table.height = 380;
+table.width = 580;
+field.width = 580;
+field.height = 380;
+app.stage.addChild(field);
+app.stage.addChild(table);
+const tableTopEdge = 35;
+const tableBottomEdge = 345;
+const tableLeftEdge = 30;
+const tableRightEdge = 575;
+const goalTopEdge = 150;
+const goalBottomEdge = 230;
