@@ -1,14 +1,9 @@
 function switchXDirection(){
-  switch (ballXDelta) {
-    case -1:
-      //moving right
-      ballXDelta = 1;
-      break;
-    case 1:
-      ballXDelta = -1;
-      break
-    default:   
-  }     
+  ballXDelta = ballXDelta * -1;   
+}
+function switchYDirection(){
+  ballYDelta = ballYDelta * -1;
+  
 }
 function isTouchingPlayer(){
   if (ball.x == columnOneX){ 

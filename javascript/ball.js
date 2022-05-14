@@ -328,37 +328,64 @@ app.ticker.add((delta) => {
     switchXDirection();
 
   }
-  if(isTouchingWall()){
-    if (isBlueScored()) {
-      console.log(8)
-      bluePointElement.innerHTML = ++bluePoints;
-      ballXDelta = startingDirection();
-      ballYDelta = 0; 
-      ball.x=startPoint;
-    }
-    else if (isRedScored()) {
-      console.log(9)
-      redPointElement.innerHTML = ++redPoints;
-      ballXDelta=startingDirection();
-      ballYDelta = 0;
-      ball.x=startPoint;
-    }
-    else {
-      console.log(10)
-      switchXDirection(); 
-    } 
+  
+  if(isTouchingTopWall()||isTouchingBottomWall()){
+    switchYDirection()
+
   }
+  
+
+  else if (isBlueScored()) {
+    console.log(8)
+    bluePointElement.innerHTML = ++bluePoints;
+    ballXDelta = startingDirection();
+    ballYDelta = 0; 
+    ball.x=startPoint;
+  }
+  else if (isRedScored()) {
+    console.log(9)
+    redPointElement.innerHTML = ++redPoints;
+    ballXDelta=startingDirection();
+    ballYDelta = 0;
+    ball.x=startPoint;
+  }
+  else if (isTouchingLeftWall()||isTouchingRightWall()){
+    switchXDirection()
+  }
+ 
   console.log(ball.x)
   console.log(ball.y)
   ball.x += ballXDelta;
   ball.y += ballYDelta;
 });
 
-function isTouchingWall(){
-  if(ball.x<=tableLeftEdge||ball.x>=tableRightEdge||ball.y<=tableTopEdge||ball.y>=tableBottomEdge ){
+function isTouchingTopWall(){
+  if(ball.y<=tableTopEdge ){
     return true
   }
-return false
+  
+  return false
+}
+function isTouchingBottomWall(){
+  if(ball.y>=tableBottomEdge ){
+    return true
+  }
+  
+  return false
+}
+function isTouchingLeftWall(){
+  if(ball.x<=tableLeftEdge){
+    return true
+  }
+  
+  return false
+}
+function isTouchingRightWall(){
+  if(ball.x>=tableRightEdge){
+    return true
+  }
+  
+  return false
 }
 function isInGoal(){
   console.log({ballY:ball.y,goalTopEdge,goalBottomEdge})
@@ -368,13 +395,13 @@ function isInGoal(){
 return false 
 }
 function isBlueScored(){
-   if(ball.x<=tableLeftEdge && isInGoal()){
+   if(isTouchingLeftWall()&& isInGoal()){
      return true
    }
  return false  
 }
 function isRedScored(){
-  if(ball.x>=tableRightEdge && isInGoal()){
+  if(isTouchingRightWall() && isInGoal()){
     return true
   }
 return false
