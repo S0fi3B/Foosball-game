@@ -319,7 +319,7 @@ app.ticker.add((delta) => {
     } 
   }
   if (ball.x<= tableLeftEdge && ballXDelta == 1 ){
-   
+  
     switchXDirection();
 
   }
