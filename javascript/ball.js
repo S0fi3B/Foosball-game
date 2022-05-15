@@ -287,25 +287,25 @@ app.ticker.add((delta) => {
         const range = height/3;
         //moves ball vertically when htting top of player
         if (ball.y <= columnEightY[i].top+blueDeltaY +2 ){ // 0 - 2
-          console.log(1.7)
+          
           switchXDirection();
           ballYDelta = 2;
         }
         //moves ball at an 45º angle at the first third of the player
         else if(ball.y <=range-1+columnEightY[i].top+blueDeltaY){ // 3-9
-          console.log(2.7)
+          
           switchXDirection();
           ballYDelta = -1;
         }
         //moves ball horizontally at the middle third of the player
         else if(ball.y <= columnEightY[i].top + range*2 +blueDeltaY){ // 10-20
-          console.log(3.7)
+          
           switchXDirection();
           ballYDelta = 0;
         }
         //moves ball at an 135• angle at the bottom third of the player
         else if(ball.y <= columnEightY[i].bottom-3+blueDeltaY){ //21-27
-            console.log(4.7)
+            
             switchXDirection();
             ballYDelta = 1;
         }
@@ -318,13 +318,13 @@ app.ticker.add((delta) => {
       }
     } 
   }
-  if (ball.x<= tableLeftEdge && ballXDelta == -1 ){
-    console.log(6)
+  if (ball.x<= tableLeftEdge && ballXDelta == 1 ){
+   
     switchXDirection();
 
   }
-  else if(ball.x>= tableRightEdge && ballXDelta == 1 ) {
-    console.log(7)
+  else if(ball.x>= tableRightEdge && ballXDelta == -1 ) {
+   
     switchXDirection();
 
   }
@@ -336,21 +336,21 @@ app.ticker.add((delta) => {
   
 
   else if (isBlueScored()) {
-    console.log(8)
+    
     bluePointElement.innerHTML = ++bluePoints;
     ballXDelta = startingDirection();
     ballYDelta = 0; 
     ball.x=startPoint;
   }
   else if (isRedScored()) {
-    console.log(9)
+    
     redPointElement.innerHTML = ++redPoints;
     ballXDelta=startingDirection();
     ballYDelta = 0;
     ball.x=startPoint;
   }
   else if (isTouchingLeftWall()||isTouchingRightWall()){
-    console.log(10)
+    
     switchXDirection()
   }
  
