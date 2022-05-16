@@ -20,31 +20,31 @@ app.ticker.add((delta) => {
         const range = height/3;
         //moves ball vertically when htting top of player
         if (ball.y <= columnOneY[i].top+redDeltaY +2 ){ // 0 - 2
-          console.log(1)
+          
           switchXDirection();
           ballYDelta = 2;
         }
         //moves ball at an 45º angle at the first third of the player
         else if(ball.y <=range-1+columnOneY[i].top+redOneY){ // 3-9
-          console.log(2)
+         
           switchXDirection();
           ballYDelta = -1;
         }
         //moves ball horizontally at the middle third of the player
         else if(ball.y <= columnOneY[i].top + range*2 +redDeltaY){ // 10-20
-          console.log(3)
+         
           switchXDirection();
           ballYDelta = 0;
         }
         //moves ball at an 135• angle at the bottom third of the player
         else if(ball.y <= columnOneY[i].bottom-3+redDeltaY){ //21-27
-            console.log(4)
+            
             switchXDirection();
             ballYDelta = 1;
         }
         //moves ball vertically when hitting bottom of player
         else { //28- 30
-            console.log(5)
+            
             switchXDirection();
             ballYDelta = 2;
         }
@@ -58,31 +58,31 @@ app.ticker.add((delta) => {
         const range = height/3;
         //moves ball vertically when htting top of player
         if (ball.y <= columnTwoY[i].top+redTwoY +2 ){ // 0 - 2
-          console.log(1.1)
+          
           switchXDirection();
           ballYDelta = 2;
         }
         //moves ball at an 45º angle at the first third of the player
         else if(ball.y <=range-1+columnTwoY[i].top+redDeltaY){ // 3-9
-          console.log(2.1)
+          
           switchXDirection();
           ballYDelta = -1;
         }
         //moves ball horizontally at the middle third of the player
         else if(ball.y <= columnTwo[i].top + range*2 +redDeltaY){ // 10-20
-          console.log(3.1)
+          
           switchXDirection();
           ballYDelta = 0;
         }
         //moves ball at an 135• angle at the bottom third of the player
         else if(ball.y <= columnTwoY[i].bottom-3+redDeltaY){ //21-27
-            console.log(4.1)
+           
             switchXDirection();
             ballYDelta = 1;
         }
         //moves ball vertically when hitting bottom of player
         else { //28- 30
-            console.log(5.1)
+            
             switchXDirection();
             ballYDelta = 2;
         }
@@ -96,19 +96,19 @@ app.ticker.add((delta) => {
         const range = height/3;
         //moves ball vertically when htting top of player
         if (ball.y <= columnThreeY[i].top+blueDeltaY +2 ){ // 0 - 2
-          console.log(1.2)
+         
           switchXDirection();
           ballYDelta = 2;
         }
         //moves ball at an 45º angle at the first third of the player
         else if(ball.y <=range-1+columnThreeY[i].top+blueDeltaY){ // 3-9
-          console.log(2.2)
+         
           switchXDirection();
           ballYDelta = -1;
         }
         //moves ball horizontally at the middle third of the player
         else if(ball.y <= columnThreeY[i].top + range*2 +blueDeltaY){ // 10-20
-          console.log(3.2)
+         
           switchXDirection();
           ballYDelta = 0;
         }
@@ -120,7 +120,7 @@ app.ticker.add((delta) => {
         }
         //moves ball vertically when hitting bottom of player
         else { //28- 30
-            console.log(5.2)
+           
             switchXDirection();
             ballYDelta = 2;
         }
@@ -135,31 +135,31 @@ app.ticker.add((delta) => {
         const range = height/3;
         //moves ball vertically when htting top of player
         if (ball.y <= columnFourY[i].top+redDeltaY +2 ){ // 0 - 2
-          console.log(1.3)
+          
           switchXDirection();
           ballYDelta = 2;
         }
         //moves ball at an 45º angle at the first third of the player
         else if(ball.y <=range-1+columnFourY[i].top+redDeltaY){ // 3-9
-          console.log(2.3)
+          
           switchXDirection();
           ballYDelta = -1;
         }
         //moves ball horizontally at the middle third of the player
         else if(ball.y <= columnFourY[i].top + range*2 +redDeltaY){ // 10-20
-          console.log(3.3)
+          
           switchXDirection();
           ballYDelta = 0;
         }
         //moves ball at an 135• angle at the bottom third of the player
         else if(ball.y <= columnFourY[i].bottom-3+redDeltaY){ //21-27
-            console.log(4.3)
+          
             switchXDirection();
             ballYDelta = 1;
         }
         //moves ball vertically when hitting bottom of player
         else { //28- 30
-            console.log(5.3)
+            
             switchXDirection();
             ballYDelta = 2;
         }
@@ -173,31 +173,31 @@ app.ticker.add((delta) => {
         const range = height/3;
         //moves ball vertically when htting top of player
         if (ball.y <= columnFiveY[i].top+blueDeltaY +2 ){ // 0 - 2
-          console.log(1.4)
+          
           switchXDirection();
           ballYDelta = 2;
         }
         //moves ball at an 45º angle at the first third of the player
         else if(ball.y <=range-1+columnFiveY[i].top+blueDeltaY){ // 3-9
-          console.log(2.4)
+          
           switchXDirection();
           ballYDelta = -1;
         }
         //moves ball horizontally at the middle third of the player
         else if(ball.y <= columnFiveY[i].top + range*2 +blueDeltaY){ // 10-20
-          console.log(3.4)
+         
           switchXDirection();
           ballYDelta = 0;
         }
         //moves ball at an 135• angle at the bottom third of the player
         else if(ball.y <= columnFiveY[i].bottom-3+blueDeltaY){ //21-27
-            console.log(4.4)
+           
             switchXDirection();
             ballYDelta = 1;
         }
         //moves ball vertically when hitting bottom of player
         else { //28- 30
-            console.log(5.4)
+            
             switchXDirection();
             ballYDelta = 2;
         }
@@ -211,31 +211,31 @@ app.ticker.add((delta) => {
         const range = height/3;
         //moves ball vertically when htting top of player
         if (ball.y <= columnSixY[i].top+redDeltaY +2 ){ // 0 - 2
-          console.log(1.5)
+         
           switchXDirection();
           ballYDelta = 2;
         }
         //moves ball at an 45º angle at the first third of the player
         else if(ball.y <=range-1+columnSixY[i].top+redDeltaY){ // 3-9
-          console.log(2.5)
+          
           switchXDirection();
           ballYDelta = -1;
         }
         //moves ball horizontally at the middle third of the player
         else if(ball.y <= columnSixY[i].top + range*2 +redDeltaY){ // 10-20
-          console.log(3.5)
+          
           switchXDirection();
           ballYDelta = 0;
         }
         //moves ball at an 135• angle at the bottom third of the player
         else if(ball.y <= columnSixY[i].bottom-3+redDeltaY){ //21-27
-            console.log(4.5)
+           
             switchXDirection();
             ballYDelta = 1;
         }
         //moves ball vertically when hitting bottom of player
         else { //28- 30
-            console.log(5.5)
+            
             switchXDirection();
             ballYDelta = 2;
         }
@@ -249,31 +249,31 @@ app.ticker.add((delta) => {
         const range = height/3;
         //moves ball vertically when htting top of player
         if (ball.y <= columnSevenY[i].top+blueDeltaY +2 ){ // 0 - 2
-          console.log(1.6)
+          
           switchXDirection();
           ballYDelta = 2;
         }
         //moves ball at an 45º angle at the first third of the player
         else if(ball.y <=range-1+columnSevenY[i].top+blueDeltaY){ // 3-9
-          console.log(2.6)
+          
           switchXDirection();
           ballYDelta = -1;
         }
         //moves ball horizontally at the middle third of the player
         else if(ball.y <= columnSevenY[i].top + range*2 +blueDeltaY){ // 10-20
-          console.log(3.6)
+          
           switchXDirection();
           ballYDelta = 0;
         }
         //moves ball at an 135• angle at the bottom third of the player
         else if(ball.y <= columnSevenY[i].bottom-3+blueDeltaY){ //21-27
-            console.log(4.6)
+            
             switchXDirection();
             ballYDelta = 1;
         }
         //moves ball vertically when hitting bottom of player
         else { //28- 30
-            console.log(5.6)
+            
             switchXDirection();
             ballYDelta = 2;
         }
@@ -311,7 +311,7 @@ app.ticker.add((delta) => {
         }
         //moves ball vertically when hitting bottom of player
         else { //28- 30
-            console.log(5.7)
+            
             switchXDirection();
             ballYDelta = 2;
         }
